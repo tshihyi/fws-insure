@@ -44,4 +44,4 @@ WHERE  P.[FarmInsureStatus] = 1
 	AND A.[ID] IS NULL --無異常
 	AND N.[ID] IS NULL --無補正
 	AND (I.[InsureUserProfileID] IS NULL OR I.[ReviewResult] = 0) --排除職保退保，加入投保中但待審
-ORDER BY P.[IDCard], O.[Name]
+ORDER BY O.[Name], P.[IDCard]
